@@ -40,7 +40,7 @@ export function GradesTable({ courses = [] }: GradesTableProps) {
           <tr key={course.name} className={index % 2 === 0 ? 'even-row' : 'odd-row'}>
             <td className="course-name">{course.name}</td>
             <td className="course-year">{course.year}</td>
-            <td className="course-grade">{course.grade.toFixed(1)}</td>
+            <td className="course-grade">{course.grade}</td>
             <td className="course-ects">{course.ects}</td>
           </tr>
         ))}

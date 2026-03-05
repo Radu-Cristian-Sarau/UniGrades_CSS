@@ -7,7 +7,7 @@
   color: #ffffff;
   font-family: 'Courier New', monospace;
   font-size: 0.95rem;
-  border: 1px solid #17b118;
+  border: 2px solid #17b118;
   border-radius: 2px;
   box-shadow: 0 0 20px #17b11440, inset 0 0 20px #17b11410;
   margin: 1.5rem 0;
@@ -27,7 +27,7 @@
   font-weight: 700;
   text-shadow: 0 0 8px #17b11880;
   letter-spacing: 0.5px;
-  border-right: 1px solid #17b11840;
+  border-right: 2px solid #17b11840;
 }
 
 .grades-table thead th:nth-child(2),
@@ -43,8 +43,13 @@
 /* Table Body Rows */
 
 .grades-table tbody tr {
-  border-bottom: 1px solid #17b11820;
+  border-bottom: 2px solid #17b11820;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grades-table tbody tr:last-child {
+  border-bottom: none;
+  padding-bottom: 1.5rem;
 }
 
 .grades-table tbody tr:hover {
@@ -53,18 +58,18 @@
 }
 
 .grades-table tbody tr.even-row {
-  background-color: #0f1429;
-  color: #e0e0e0;
-}
-
-.grades-table tbody tr.odd-row {
   background-color: #0d0f22;
   color: #d4d4d4;
 }
 
+.grades-table tbody tr.odd-row {
+  background-color: #0f1429;
+  color: #e0e0e0;
+}
+
 .grades-table tbody td {
   padding: 0.75rem 1rem;
-  border-right: 1px solid #17b11820;
+  border-right: 2px solid #17b11820;
 }
 
 .grades-table tbody td:last-child {
