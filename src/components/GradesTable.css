@@ -30,6 +30,12 @@
   box-shadow: inset -2px 0 0 #17b11840;
 }
 
+.grades-table thead th:nth-child(2),
+.grades-table thead th:nth-child(3),
+.grades-table thead th:nth-child(4) {
+  text-align: center;
+}
+
 .grades-table thead th:last-child {
   box-shadow: none;
 }
