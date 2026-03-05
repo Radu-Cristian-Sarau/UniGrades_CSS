@@ -26,34 +26,26 @@ export function GradesTable({ courses = [] }: GradesTableProps) {
         ]
 
   return (
-    <div className="grades-table-container">
-      <div className="grades-header">
-        <h2>Grades Table</h2>
-      </div>
-
-      <div className="table-wrapper">
-        <table className="grades-table">
-          <thead>
-            <tr>
-              <th>Course Name</th>
-              <th>Year</th>
-              <th>Grade</th>
-              <th>ECTS</th>
-            </tr>
-          </thead>
-          <tbody>
-            {displayCourses.map((course, index) => (
-              <tr key={course.name} className={index % 2 === 0 ? 'even-row' : 'odd-row'}>
-                <td className="course-name">{course.name}</td>
-                <td className="course-year">{course.year}</td>
-                <td className="course-grade">{course.grade.toFixed(1)}</td>
-                <td className="course-ects">{course.ects}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <table className="grades-table">
+      <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Year</th>
+          <th>Grade</th>
+          <th>ECTS</th>
+        </tr>
+      </thead>
+      <tbody>
+        {displayCourses.map((course, index) => (
+          <tr key={course.name} className={index % 2 === 0 ? 'even-row' : 'odd-row'}>
+            <td className="course-name">{course.name}</td>
+            <td className="course-year">{course.year}</td>
+            <td className="course-grade">{course.grade.toFixed(1)}</td>
+            <td className="course-ects">{course.ects}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
   )
 }
 

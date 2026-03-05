@@ -1,4 +1,4 @@
-.avg-grades-per-year-container {
+.total-ects-per-year-container {
   background-color: #0f1429;
   border: 1px solid #17b118;
   border-radius: 2px;
@@ -7,13 +7,13 @@
   overflow: hidden;
 }
 
-.avg-grades-per-year-container .chart-header {
+.total-ects-per-year-container .chart-header {
   padding: 1rem 1.5rem;
   border-bottom: 1px solid #17b118;
   background-color: #0a0e27;
 }
 
-.avg-grades-per-year-container .chart-header h2 {
+.total-ects-per-year-container .chart-header h2 {
   margin: 0;
   font-size: 1.25rem;
   color: #17b118;
@@ -21,18 +21,18 @@
   letter-spacing: 0.05em;
 }
 
-.avg-grades-per-year-container .chart-content {
+.total-ects-per-year-container .chart-content {
   padding: 1.5rem 1.5rem;
 }
 
-.bars-container {
+.total-ects-per-year-container .bars-container {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
   align-items: flex-end;
 }
 
-.bar-item {
+.total-ects-per-year-container .bar-item {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -40,7 +40,7 @@
   flex: 1;
 }
 
-.bar-label {
+.total-ects-per-year-container .bar-label {
   color: #b0b0b0;
   font-weight: 500;
   font-size: 0.9rem;
@@ -48,7 +48,7 @@
   letter-spacing: 0.05em;
 }
 
-.bar-wrapper {
+.total-ects-per-year-container .bar-wrapper {
   position: relative;
   width: 40px;
   height: 200px;
@@ -60,7 +60,7 @@
   flex-direction: column-reverse;
 }
 
-.bar {
+.total-ects-per-year-container .bar {
   width: 100%;
   display: flex;
   align-items: center;
@@ -70,19 +70,19 @@
   position: relative;
 }
 
-.bar-item.year-1 .bar {
+.total-ects-per-year-container .bar-item.year-1 .bar {
   background: linear-gradient(180deg, #1a80bb, #2a9fff);
 }
 
-.bar-item.year-2 .bar {
+.total-ects-per-year-container .bar-item.year-2 .bar {
   background: linear-gradient(180deg, #ea801c, #ff9c3d);
 }
 
-.bar-item.year-3 .bar {
+.total-ects-per-year-container .bar-item.year-3 .bar {
   background: linear-gradient(180deg, #17b118, #17f140);
 }
 
-.bar-value {
+.total-ects-per-year-container .bar-value {
   font-weight: 600;
   font-size: 0.85rem;
   color: #0a0e27;

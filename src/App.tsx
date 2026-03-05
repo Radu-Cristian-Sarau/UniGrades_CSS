@@ -57,7 +57,8 @@ function App() {
         <GradesTable courses={courses} />
         <MetricsTable stats={stats} />
         <AverageGradesPerYear stats={stats} />
-
+        <TotalEctsPerYear stats={stats} />
+        <TotalEctsBar stats={stats} />
       </div>
     </>
   )

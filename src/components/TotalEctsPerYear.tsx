@@ -1,12 +1,12 @@
-import './AverageGradesPerYear.css'
+import './TotalEctsPerYear.css'
 import type { Stats } from '../utils/calculateStats'
 
-interface AverageGradesPerYearProps {
+interface TotalEctsPerYearProps {
   stats: Stats
 }
 
-export function AverageGradesPerYear({ stats }: AverageGradesPerYearProps) {
-  const years = Object.keys(stats.gradesByYear)
+export function TotalEctsPerYear({ stats }: TotalEctsPerYearProps) {
+  const years = Object.keys(stats.ectsByYear)
     .map((y) => parseInt(y))
     .sort((a, b) => a - b)
 
@@ -14,29 +14,29 @@ export function AverageGradesPerYear({ stats }: AverageGradesPerYearProps) {
     return null
   }
 
-  const maxGrade = 10
+  const maxEcts = Math.max(...years.map((y) => stats.ectsByYear[y]))
   const sortedEntries = years.map((year) => ({
     year,
-    avg: stats.gradesByYear[year].avg,
+    ects: stats.ectsByYear[year],
   }))
 
   return (
-    <div className="avg-grades-per-year-container">
+    <div className="total-ects-per-year-container">
       <div className="chart-header">
-        <h2>Average Grades Per Year</h2>
+        <h2>Total ECTS Per Year</h2>
       </div>
       <div className="chart-content">
         <div className="bars-container">
-          {sortedEntries.map(({ year, avg }) => {
-            const percentage = (avg / maxGrade) * 100
+          {sortedEntries.map(({ year, ects }) => {
+            const percentage = (ects / maxEcts) * 100
             return (
-              <div key={`year-${year}`} className={`bar-item year-${year}`}>
+              <div key={`ects-year-${year}`} className={`bar-item year-${year}`}>
                 <div className="bar-wrapper">
                   <div 
                     className="bar" 
                     style={{ height: `${percentage}%` }}
                   >
-                    <span className="bar-value">{avg.toFixed(2)}</span>
+                    <span className="bar-value">{ects}</span>
                   </div>
                 </div>
                 <div className="bar-label">Year {year}</div>
@@ -49,4 +49,4 @@ export function AverageGradesPerYear({ stats }: AverageGradesPerYearProps) {
   )
 }
 
-export default AverageGradesPerYear
+export default TotalEctsPerYear

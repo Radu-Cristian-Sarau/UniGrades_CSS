@@ -1,42 +1,18 @@
-/* UniGrades Table Container & Layout */
-
-.grades-table-container {
-  background-color: #0f1429;
-  border: 1px solid #17b118;
-  border-radius: 2px;
-  box-shadow: 0 0 20px #17b11440, inset 0 0 20px #17b11410;
-  margin: 1.5rem 0;
-  overflow: hidden;
-}
-
-.grades-header {
-  padding: 1rem 1.5rem;
-  border-bottom: 1px solid #17b118;
-  background-color: #0a0e27;
-}
-
-.grades-header h2 {
-  margin: 0;
-  font-size: 1.25rem;
-  color: #17b118;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
 /* Table Styling */
-
-.table-wrapper {
-  overflow-x: auto;
-  padding: 1.5rem;
-}
 
 .grades-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #0a0e27;
+  background-color: #0f1429;
   color: #ffffff;
   font-family: 'Courier New', monospace;
   font-size: 0.95rem;
+  border: 1px solid #17b118;
+  border-radius: 2px;
+  box-shadow: 0 0 20px #17b11440, inset 0 0 20px #17b11410;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  box-sizing: border-box;
 }
 
 .grades-table thead {
