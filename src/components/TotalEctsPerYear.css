@@ -48,6 +48,13 @@
   gap: 0.5rem;
   align-items: center;
   flex: 1;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.total-ects-per-year-container .bar-item:has(.bar-wrapper:hover) {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 10px rgba(23, 177, 24, 0.6));
+  cursor: pointer;
 }
 
 .total-ects-per-year-container .bar-label {
@@ -56,6 +63,12 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.total-ects-per-year-container .bar-item:has(.bar-wrapper:hover) .bar-label {
+  color: #17b118;
+  font-weight: 600;
 }
 
 .total-ects-per-year-container .bar-wrapper {
@@ -68,6 +81,12 @@
   overflow: hidden;
   display: flex;
   flex-direction: column-reverse;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.total-ects-per-year-container .bar-wrapper:hover {
+  border-color: #17b118;
+  box-shadow: inset 0 0 15px rgba(23, 177, 24, 0.2);
 }
 
 .total-ects-per-year-container .bar {
@@ -76,8 +95,13 @@
   align-items: center;
   justify-content: center;
   min-height: 0;
-  transition: height 0.3s ease;
+  transition: height 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   position: relative;
+}
+
+.total-ects-per-year-container .bar-wrapper:hover .bar {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3) inset;
+  filter: brightness(1.15);
 }
 
 .total-ects-per-year-container .bar-item.year-1 .bar {
