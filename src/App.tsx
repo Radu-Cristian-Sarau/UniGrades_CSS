@@ -54,11 +54,15 @@ function App() {
     <>
       <Header />
       <div className="container">
-        <GradesTable courses={courses} />
-        <MetricsTable stats={stats} />
-        <AverageGradesPerYear stats={stats} />
-        <TotalEctsPerYear stats={stats} />
-        <TotalEctsBar stats={stats} />
+        <div className="content-left">
+          <GradesTable courses={courses} />
+        </div>
+        <div className="content-right">
+          <MetricsTable stats={stats} />
+          <AverageGradesPerYear stats={stats} />
+          <TotalEctsPerYear stats={stats} />
+          <TotalEctsBar stats={stats} />
+        </div>
       </div>
     </>
   )
