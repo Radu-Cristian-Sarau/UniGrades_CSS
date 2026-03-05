@@ -1,0 +1,282 @@
+/* UniGrades Table Container & Layout */
+
+.grades-table-container {
+  background-color: #0f1429;
+  border: 1px solid #17b118;
+  border-radius: 4px;
+  box-shadow: 0 0 20px #17b11440, inset 0 0 20px #17b11410;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.grades-header {
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #17b11860;
+  padding-bottom: 1rem;
+}
+
+.grades-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #17b118;
+  text-shadow: 0 0 10px #17b11880;
+  font-weight: 600;
+}
+
+.grades-content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Table Styling */
+
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #17b11860;
+  border-radius: 2px;
+  background-color: #0a0e27;
+}
+
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #0a0e27;
+  color: #ffffff;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+}
+
+.grades-table thead {
+  background-color: #0a0e27;
+  border-bottom: 2px solid #17b118;
+}
+
+.grades-table thead th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  color: #17b118;
+  font-weight: 700;
+  text-shadow: 0 0 8px #17b11880;
+  letter-spacing: 0.5px;
+  border-right: 1px solid #17b11840;
+}
+
+.grades-table thead th:nth-child(2),
+.grades-table thead th:nth-child(3),
+.grades-table thead th:nth-child(4) {
+  text-align: center;
+}
+
+.grades-table thead th:last-child {
+  border-right: none;
+}
+
+/* Table Body Rows */
+
+.grades-table tbody tr {
+  border-bottom: 1px solid #17b11820;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grades-table tbody tr:hover {
+  background-color: #17b11815;
+  box-shadow: inset 0 0 10px #17b11410;
+}
+
+.grades-table tbody tr.even-row {
+  background-color: #0f1429;
+  color: #e0e0e0;
+}
+
+.grades-table tbody tr.odd-row {
+  background-color: #0d0f22;
+  color: #d4d4d4;
+}
+
+.grades-table tbody td {
+  padding: 0.75rem 1rem;
+  border-right: 1px solid #17b11820;
+}
+
+.grades-table tbody td:last-child {
+  border-right: none;
+}
+
+.course-name {
+  font-weight: 500;
+  color: #17b118;
+}
+
+.course-year {
+  text-align: center;
+  min-width: 50px;
+}
+
+.course-grade {
+  text-align: center;
+  min-width: 60px;
+  font-weight: 600;
+  color: #4ade80;
+}
+
+.course-ects {
+  text-align: center;
+  min-width: 50px;
+  color: #22c55e;
+}
+
+/* Statistics Panel */
+
+.statistics-panel {
+  background-color: #0a0e27;
+  border: 1px solid #17b11860;
+  border-radius: 2px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stats-section {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #17b11840;
+}
+
+.stats-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.stats-section h3 {
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+  color: #17b118;
+  text-shadow: 0 0 8px #17b11880;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+  gap: 0.5rem;
+}
+
+.stat-label {
+  color: #a0a0a0;
+  flex: 1;
+}
+
+.stat-value {
+  color: #4ade80;
+  font-weight: 700;
+  min-width: 50px;
+  text-align: right;
+  font-family: 'Courier New', monospace;
+}
+
+.stat-ects {
+  color: #6b7280;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+  .grades-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .statistics-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .stats-section {
+    border-bottom: none;
+    padding-bottom: 0;
+    border-right: 1px solid #17b11840;
+    padding-right: 1rem;
+  }
+
+  .stats-section:nth-child(even) {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .grades-table-container {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  .grades-content {
+    grid-template-columns: 1fr;
+  }
+
+  .grades-table {
+    font-size: 0.85rem;
+  }
+
+  .grades-table thead th,
+  .grades-table tbody td {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .course-name {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .statistics-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-section {
+    border-bottom: 1px solid #17b11840;
+    padding-bottom: 1rem;
+    border-right: none;
+  }
+
+  .stats-section:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .grades-table-container {
+    padding: 0.75rem;
+  }
+
+  .grades-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .grades-table {
+    font-size: 0.75rem;
+  }
+
+  .grades-table thead th,
+  .grades-table tbody td {
+    padding: 0.5rem;
+  }
+
+  .stat-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
