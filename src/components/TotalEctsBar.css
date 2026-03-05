@@ -1,30 +1,11 @@
-.total-ects-bar-container {
-  background-color: #0f1429;
-  border: 1px solid #17b118;
-  border-radius: 2px;
-  box-shadow: 0 0 20px #17b11440, inset 0 0 20px #17b11410;
-  margin: 1.5rem 0;
-  overflow: hidden;
-}
-
-.total-ects-bar-container .bar-header {
-  padding: 1rem 1.5rem;
-  border-bottom: 1px solid #17b118;
-  background-color: #0a0e27;
-}
-
-.total-ects-bar-container .bar-header h2 {
-  margin: 0;
-  font-size: 1.25rem;
-  color: #17b118;
+.bar-label {
+  color: #b0b0b0;
+  font-weight: 500;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-}
-
-.total-ects-bar-container .bar-content {
-  padding: 3rem 1.5rem;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 0rem;
+  display: block;
 }
 
 .ects-bar-wrapper {

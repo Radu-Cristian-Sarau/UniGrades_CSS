@@ -25,6 +25,16 @@
   padding: 1.5rem 1.5rem;
 }
 
+.chart-label {
+  color: #b0b0b0;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
 .total-ects-per-year-container .bars-container {
   display: flex;
   flex-direction: row;
