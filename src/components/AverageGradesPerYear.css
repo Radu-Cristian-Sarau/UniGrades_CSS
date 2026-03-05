@@ -1,0 +1,86 @@
+.avg-grades-per-year-container {
+  background-color: #0f1429;
+  border: 1px solid #17b118;
+  border-radius: 2px;
+  box-shadow: 0 0 20px #17b11440, inset 0 0 20px #17b11410;
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+.avg-grades-per-year-container .chart-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #17b118;
+  background-color: #0a0e27;
+}
+
+.avg-grades-per-year-container .chart-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #17b118;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.avg-grades-per-year-container .chart-content {
+  padding: 1.5rem 1.5rem;
+}
+
+.bars-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bar-label {
+  color: #b0b0b0;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.bar-wrapper {
+  position: relative;
+  height: 40px;
+  background-color: #0a0e27;
+  border: 1px solid #17b11420;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  transition: width 0.3s ease;
+  position: relative;
+}
+
+.bar-item.year-1 .bar {
+  background: linear-gradient(90deg, #1a80bb, #2a9fff);
+}
+
+.bar-item.year-2 .bar {
+  background: linear-gradient(90deg, #ea801c, #ff9c3d);
+}
+
+.bar-item.year-3 .bar {
+  background: linear-gradient(90deg, #17b118, #17f140);
+}
+
+.bar-value {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #0a0e27;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
+  padding: 0 0.5rem;
+  white-space: nowrap;
+}

@@ -56,9 +56,8 @@ function App() {
       <div className="container">
         <GradesTable courses={courses} />
         <MetricsTable stats={stats} />
-        
-        
-        
+        <AverageGradesPerYear stats={stats} />
+
       </div>
     </>
   )
