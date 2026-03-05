@@ -27,17 +27,11 @@
   font-weight: 700;
   text-shadow: 0 0 8px #17b11880;
   letter-spacing: 0.5px;
-  border-right: 2px solid #17b11840;
-}
-
-.grades-table thead th:nth-child(2),
-.grades-table thead th:nth-child(3),
-.grades-table thead th:nth-child(4) {
-  text-align: center;
+  box-shadow: inset -2px 0 0 #17b11840;
 }
 
 .grades-table thead th:last-child {
-  border-right: none;
+  box-shadow: none;
 }
 
 /* Table Body Rows */
@@ -69,11 +63,11 @@
 
 .grades-table tbody td {
   padding: 0.75rem 1rem;
-  border-right: 2px solid #17b11820;
+  box-shadow: inset -2px 0 0 #17b11820;
 }
 
 .grades-table tbody td:last-child {
-  border-right: none;
+  box-shadow: none;
 }
 
 .course-name {
