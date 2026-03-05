@@ -79,11 +79,13 @@
 .course-name {
   font-weight: 500;
   color: #17b118;
+  user-select: text;
 }
 
 .course-year {
   text-align: center;
   min-width: 50px;
+  user-select: text;
 }
 
 .course-grade {
@@ -91,12 +93,14 @@
   min-width: 60px;
   font-weight: 600;
   color: #17b118;
+  user-select: text;
 }
 
 .course-ects {
   text-align: center;
   min-width: 50px;
   color: #17b118;
+  user-select: text;
 }
 
 /* Responsive Design */
