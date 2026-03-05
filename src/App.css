@@ -28,6 +28,16 @@
   gap: 1.5rem;
 }
 
+.footer-text {
+  text-align: right;
+  color: #17b118;
+  font-size: 0.9rem;
+  margin: 0rem 0 0 0;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

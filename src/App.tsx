@@ -62,6 +62,7 @@ function App() {
           <AverageGradesPerYear stats={stats} />
           <TotalEctsPerYear stats={stats} />
           <TotalEctsBar stats={stats} />
+          <p className="footer-text">For <a href="https://internship.jetbrains.com/applications/50685" target="_blank" rel="noopener noreferrer">JetBrains</a>. By Radu-Cristian Sarău</p>
         </div>
       </div>
     </>
